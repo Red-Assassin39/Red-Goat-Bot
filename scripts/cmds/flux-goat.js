@@ -1,40 +1,51 @@
+const fs = require("fs");
+const path = require("path");
 const axios = require("axios");
-module.exports.config = {
-  name: "flux",
-  version: "2.0",
-  role: 2,
-  author: "Dipto",
-  description: "flux Image Generator",
-  category: "Image gen",
-  guide: "{pn} [prompt] --ratio 1024x1024\n{pn} [prompt]",
-  countDown: 15,
-};
 
-module.exports.onStart = async ({ message, event, args, api }) => {
-  try {
-  const prompt = args.join(" ");
-  /*let prompt2, ratio;
-  if (prompt.includes("--ratio")) {
-    const parts = prompt.split("--ratio");
-    prompt2 = parts[0].trim();
-    ratio = parts[1].trim();
-  } else {
-    prompt2 = prompt;
-    ratio = "1:1";
-  }*/
-    const ok = message.reply('wait baby <😘')
-    api.setMessageReaction("⌛", event.messageID, (err) => {}, true);
-    const { data } = await axios.get(
-      `https://www.noobs-api.000.pe/dipto/flux?prompt=${prompt}`
-    );
-    api.setMessageReaction("✅", event.messageID, (err) => {}, true);
-     message.unsend(ok.messageID)
-    await message.reply({
-          body: `Here's your image`, 
-          attachment: await global.utils.getStreamFromURL(data.data) 
+module.exports = {
+  config: {
+    name: "flux",
+    author: "UPoL",
+    version: "3.1",
+    cooldowns: 5,
+    role: 0,
+    category: "media",
+    guide: "{pn} <prompt>",
+  },
+  onStart: async function ({ message, args, api, event }) {
+    const prompt = args.join(" ");
+    
+
+    if (!prompt) {
+      return api.sendMessage("👀 Please provide a prompt.", event.threadID);
+    }
+
+    api.sendMessage("⏳ Generating your imagination....", event.threadID, event.messageID);
+
+    try {
+      const imagineApiUrl = https://upol-meaw-meaw-fluxx.onrender.com/flux?prompt=${encodeURIComponent(prompt)};
+
+      const imagineResponse = await axios.get(imagineApiUrl, {
+        responseType: "arraybuffer"
       });
-  } catch (e) {
-    console.log(e);
-    message.reply("Error: " + e.message);
+
+      const cacheFolderPath = path.join(__dirname, "cache");
+      if (!fs.existsSync(cacheFolderPath)) {
+        fs.mkdirSync(cacheFolderPath);
+      }
+      const imagePath = path.join(cacheFolderPath, ${Date.now()}_generated.png);
+      fs.writeFileSync(imagePath, Buffer.from(imagineResponse.data, "binary"));
+
+      const stream = fs.createReadStream(imagePath);
+      api.sendMessage({
+        body: "",
+        attachment: stream
+      }, event.threadID, () => {
+        fs.unlinkSync(imagePath);
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      api.sendMessage("❌ | An error occurred. Please try again later.", event.threadID, event.messageID);
+    }
   }
 };

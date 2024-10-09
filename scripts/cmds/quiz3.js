@@ -7,7 +7,7 @@ const userDataFilePath = path.join(__dirname, 'user.json');
 
 module.exports = {
   config: {
-    name: "quiz",
+    name: "quiz3",
     aliases: [],
     version: "2.0",
     author: "Kshitiz",

@@ -30,7 +30,7 @@ const shortLang = "bn";
 const lang = languagesMap[shortLang] || "bangla";
 
 module.exports.config = {
-  name: "bby",
+  name: "meow",
   version: "1.0.0",
   role: 0,
   author: "dipto",

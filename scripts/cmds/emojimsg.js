@@ -6,14 +6,14 @@ module.exports = {
       version: 1.0,
       role: 0,
       shortDescription: {
-        en: "Says hello to the user."
+        en: "emoji diben na pls."
       },
       longDescription: {
-        en: "Responds with a greeting to the user invoking the command."
+        en: "Responds with a sundor vasha."
       },
-      category: "general",
+      category: "fun",
       guide: {
-        en: "Just use the command and the bot will greet you!"
+        en: "use emoji"
       }
     },
     event: null,

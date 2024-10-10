@@ -22,7 +22,7 @@ module.exports = {
 				address: '𝐉𝐨𝐲𝐩𝐮𝐫𝐡𝐚𝐭',
 				Relationship: '𝐒𝐢𝐧𝐠𝐥𝐞',
 				religion: '𝐈𝐬𝐥𝐚𝐦',
-				facebook: 'https://www.facebook.com/red.assassin39'
+				instagram: '@𝐫𝐢𝐟𝐚𝐝𝐡𝐨𝐬𝐬𝐚𝐢𝐧.𝟑𝟗'
 			};
 
 			const bold = 'https://i.imgur.com/fAnzlH7.jpeg';
@@ -40,11 +40,11 @@ module.exports = {
 			const response = `╭─────❁\n│  𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢  \n│
 │𝐍𝐚𝐦𝐞: ${ownerInfo.name}
 │𝐆𝐞𝐧𝐝𝐞𝐫 : ${ownerInfo.gender}
-│𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 :${ownerInfo.Relationship}
-│𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : ${ownerInfo.address}
 │𝐀𝐠𝐞 :${ownerInfo.age}
+│𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 :${ownerInfo.Relationship}
 │𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧: ${ownerInfo.religion}
-│𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤: ${ownerInfo.facebook}\n╰────────────❁`;
+│𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : ${ownerInfo.address}
+│𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦: ${ownerInfo.instagram}\n╰────────────❁`;
 
 			await api.sendMessage({
 				body: response,

@@ -44,7 +44,7 @@ module.exports = {
 │𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 :${ownerInfo.Relationship}
 │𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧: ${ownerInfo.religion}
 │𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : ${ownerInfo.address}
-│𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦: ${ownerInfo.instagram}\n╰────────────❁`;
+│𝐈𝐠: ${ownerInfo.instagram}\n╰────────────❁`;
 
 			await api.sendMessage({
 				body: response,

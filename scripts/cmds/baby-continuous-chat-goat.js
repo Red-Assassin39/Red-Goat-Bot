@@ -31,6 +31,7 @@ const lang = languagesMap[shortLang] || "bangla";
 
 module.exports.config = {
   name: "meow",
+  aliases: ["bby"],
   version: "1.0.0",
   role: 0,
   author: "dipto",

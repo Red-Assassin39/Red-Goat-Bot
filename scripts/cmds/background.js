@@ -7,16 +7,16 @@ add your background images here
 chaneg the links ok it will be expired use imgbb and imgurl 
 */
 const backgroundImages = [
-  "https://imgur.com/86APvlo",
-  "https://imgur.com/aTtWIUW",
-  "https://imgur.com/2jk3a9S",
-  "https://imgur.com/ZLD3Sg7",
-  "https://imgur.com/xuCs5uA",
-  "https://imgur.com/FacWtP9",
-  "https://imgur.com/32YCbjI",
-  "https://imgur.com/kaX3aJd",
-  "https://imgur.com/eRBKrF4",
-  "https://imgur.com/KxyIR2Z"
+  "https://imgur.com/86APvlo.png",
+  "https://imgur.com/aTtWIUW.png",
+  "https://imgur.com/2jk3a9S.png",
+  "https://imgur.com/ZLD3Sg7.png",
+  "https://imgur.com/xuCs5uA.png",
+  "https://imgur.com/FacWtP9.png",
+  "https://imgur.com/32YCbjI.png",
+  "https://imgur.com/kaX3aJd.png",
+  "https://imgur.com/eRBKrF4.png",
+  "https://imgur.com/KxyIR2Z.png"
 ];
 
 

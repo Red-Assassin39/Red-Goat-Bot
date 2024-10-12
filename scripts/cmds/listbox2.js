@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: 'listbox',
+    name: 'lbox',
     version: '1.0.0',
     author: 'manhIT',
     role: 2,

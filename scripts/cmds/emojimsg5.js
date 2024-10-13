@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "🐸" || event.body && event.body.toLowerCase() == "😂" || event.body && event.body.toLowerCase() == "😹") return message.reply("𝐁𝐞𝐬𝐡𝐢 𝐇𝐚𝐬𝐡𝐥𝐞 𝐝𝐚𝐭 𝐟𝐚𝐥𝐚𝐢 𝐝𝐢𝐛𝐨 𝐠𝐡𝐮𝐬𝐢 𝐝𝐢𝐲𝐞...😒");
+	if (event.body && event.body.toLowerCase() == "🤣" || event.body && event.body.toLowerCase() == "😂" || event.body && event.body.toLowerCase() == "😹") return message.reply("𝐁𝐞𝐬𝐡𝐢 𝐇𝐚𝐬𝐡𝐥𝐞 𝐝𝐚𝐭 𝐟𝐚𝐥𝐚𝐢 𝐝𝐢𝐛𝐨 𝐠𝐡𝐮𝐬𝐢 𝐝𝐢𝐲𝐞...😒");
 }
 }

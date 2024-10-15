@@ -9,8 +9,8 @@ module.exports = {
 			longDescription: "nothing",
 			category: "fun",
 	},
-onStart: async function(){}, 
-onChat: async function ({ api, event, args, Threads, userData }) {
+	onStart: async function ({  }) { },
+	 onChat: async function ({ api, event, args, Threads, userData }) {
 	event,
 	message,
 	getLang
@@ -39,8 +39,8 @@ module.exports = {
 			longDescription: "nothing",
 			category: "fun",
 	},
-onStart: async function(){}, 
-onChat: async function ({ api, event, args, Threads, userData }) {
+	onStart: async function ({  }) { },
+	 onChat: async function ({ api, event, args, Threads, userData }) {
 	event,
 	message,
 	getLang

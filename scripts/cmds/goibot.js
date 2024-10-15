@@ -68,7 +68,6 @@ module.exports.onReply = async function ({ api, event }) {
     }
   }
 };
-onStart: async function ({  }) { },
   onChat: async function ({ api, event, args, Threads, userData }) {
   try {
     const dipto = args.join(" ").toLowerCase();
